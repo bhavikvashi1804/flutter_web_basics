@@ -15,7 +15,13 @@ class HomeView extends StatelessWidget {
         child: Column(
           children: [
             NavigationBar(),
-            CourseDetails(),
+            Expanded(
+              child: Row(
+                children: [
+                  CourseDetails(),
+                ],
+              ),
+            )
           ],
         ),
       ),
