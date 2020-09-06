@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './drawer_item.dart';
 import './navigation_drawer_header.dart';
+import '../../routing/route_names.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({Key key}) : super(key: key);
@@ -19,8 +20,8 @@ class NavigationDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           NavigationDrawerHeader(),
-          DrawerItem('Episodes', Icons.videocam),
-          DrawerItem('About', Icons.help),
+          DrawerItem('Episodes', Icons.videocam, EpisodesRoute),
+          DrawerItem('About', Icons.help, AboutRoute),
         ],
       ),
     );
