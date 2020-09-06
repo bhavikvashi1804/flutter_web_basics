@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../widgets/navigation_bar/navigation_bar.dart';
 import '../../widgets/centered_view/centered_view.dart';
+import '../../widgets/course_details/course_details.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key key}) : super(key: key);
@@ -10,12 +11,13 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        children: [
-          CenteredView(
-            child: NavigationBar(),
-          ),
-        ],
+      body: CenteredView(
+        child: Column(
+          children: [
+            NavigationBar(),
+            CourseDetails(),
+          ],
+        ),
       ),
     );
   }
