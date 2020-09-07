@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../datamodels/navbar_item_model.dart';
 
 class NavBarItemMobile extends StatelessWidget {

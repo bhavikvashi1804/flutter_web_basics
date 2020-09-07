@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../datamodels/season_details_model.dart';
-import '../../styles/text_style.dart';
+import '../../styles/text_styles.dart';
 
 class SeasonDetailsDesktop extends StatelessWidget {
   final SeasonDetailsModel details;

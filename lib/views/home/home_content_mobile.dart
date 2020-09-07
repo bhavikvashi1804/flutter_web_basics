@@ -8,18 +8,16 @@ class HomeContentMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          CourseDetails(),
-          SizedBox(
-            height: 100,
-          ),
-          CallToAction('Join Course'),
-        ],
-      ),
+    return Column(
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        CourseDetails(),
+        SizedBox(
+          height: 100,
+        ),
+        CallToAction('Join Course'),
+      ],
     );
   }
 }

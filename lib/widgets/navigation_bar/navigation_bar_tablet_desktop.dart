@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
-import './navbar_logo.dart';
-import './navbar_item.dart';
 import '../../routing/route_names.dart';
+import '../../widgets/navbar_item/navbar_item.dart';
+
+import 'navbar_logo.dart';
 
 class NavigationBarTabletDesktop extends StatelessWidget {
+  const NavigationBarTabletDesktop({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(

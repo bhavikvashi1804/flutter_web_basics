@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:responsive_builder/responsive_builder.dart';
+
 import '../../datamodels/navbar_item_model.dart';
 import '../../locator.dart';
 import '../../services/navigation_service.dart';

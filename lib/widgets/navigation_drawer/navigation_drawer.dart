@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import './drawer_item.dart';
-import './navigation_drawer_header.dart';
 import '../../routing/route_names.dart';
+import '../../widgets/navbar_item/navbar_item.dart';
+import '../../widgets/navigation_drawer/navigation_drawer_header.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({Key key}) : super(key: key);
@@ -20,8 +20,18 @@ class NavigationDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           NavigationDrawerHeader(),
-          DrawerItem('Episodes', Icons.videocam, EpisodesRoute),
-          DrawerItem('About', Icons.help, AboutRoute),
+          // BONUS: Combine the UI for this widget with the NavBarItem and make it responsive.
+          // The UI for the current DrawerItem shows when it's in mobile, else it shows the NavBarItem ui.
+          NavBarItem(
+            'Episodes',
+            EpisodesRoute,
+            icon: Icons.videocam,
+          ),
+          NavBarItem(
+            'About',
+            AboutRoute,
+            icon: Icons.help,
+          ),
         ],
       ),
     );
